@@ -13,8 +13,9 @@ to override the complete directory; a relative override is resolved from its
 working directory. An empty override is ignored.
 
 The current session log is `latest.log`. Rotation and retention apply within
-the selected directory. Existing files under `~/shoji_wm/logs/` are not moved or
-deleted; set `SHOJI_LOG_DIR` to that path to keep using them.
+the selected directory. The default-path change does not migrate or delete
+files under `~/shoji_wm/logs/`. Set `SHOJI_LOG_DIR` to that path to keep using
+it; normal rotation and retention then apply there.
 
 ## Spawning processes
 
